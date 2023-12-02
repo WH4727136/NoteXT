@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner"
+    android:backgroundTint="@color/white"
+    android:padding="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_title"
+        android:text="Tiêu đề"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:background="@color/lowgreen"
+        android:layout_marginVertical="4dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_content"
+        android:text="1231313131313123"
+        android:textSize="17dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginVertical="4dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_time"
+        android:textSize="12sp"
+        android:text="note title"
+        android:maxLines="2"
+        android:gravity="right"
+        android:ellipsize="end"
+        android:layout_marginVertical="4dp"
+        />
+
+
+</LinearLayout>

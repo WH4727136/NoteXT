@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neonblue"
+    android:padding="16dp"
+    tools:context=".NoteDeltailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Titlebar">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textSize="32dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Thêm ghi chú mới" />
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/btnsave"
+                android:src="@drawable/baseline_add_24"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:tint="@color/white"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Titlebar"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginVertical="26dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_editText_title"
+            android:hint="Tiêu đề"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_editText_content"
+            android:hint="Nội dung"
+            android:minLines="15"
+            android:gravity="top"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="8dp"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa ghi chú"
+        android:id="@+id/btndelete"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/metalicred"
+        android:padding="10dp"
+        />
+</RelativeLayout>
